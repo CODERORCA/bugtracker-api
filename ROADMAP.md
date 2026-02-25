@@ -1,36 +1,36 @@
 # Bugtracker API – Roadmap
 
-## Monat 1 – Professionelle Entwicklungsbasis
-- API-Design & Domänenmodell
-- Projektstruktur & Clean Code
-- Service Layer implementieren
-- Unit-Tests & erste CI-Pipeline
+## Month 1 – Professional Development Foundation
+- API design & domain model
+- Project structure & Clean Code
+- Implement Service Layer
+- Unit tests & initial CI pipeline
 
-## Monat 2 – Auth, Security & Datenbank
-- JWT-Authentifizierung, Rollen & Rechte
-- Passwort-Hashing, Rate Limiting
-- PostgreSQL, Indizes & Alembic Migrationen
-- Input Validation & Security Basics
+## Month 2 – Auth, Security & Database
+- JWT authentication, roles & permissions
+- Password hashing, rate limiting
+- PostgreSQL, indexes & Alembic migrations
+- Input validation & basic security measures
 
-## Monat 3 – Docker, Deployment & Betrieb
-- Dockerfile & docker-compose
-- CI/CD erweitern
-- Deployment in Cloud
-- Logging & Healthchecks
+## Month 3 – Docker, Deployment & Operations
+- Dockerfile & docker-compose setup
+- Extend CI/CD pipeline
+- Deploy application to cloud
+- Implement logging & health checks
 
-## Monat 4 – Produktfeatures
-- Kommentar-System, Markdown-Sanitizing
-- Filter, Pagination, Soft Delete
-- Caching (Redis) & Performance-Optimierung
+## Month 4 – Product Features
+- Comment system with Markdown sanitization
+- Filtering, pagination, soft delete
+- Caching (Redis) & performance optimization
 
-## Monat 5 – Architektur & Qualität
-- Refactoring & Layered Architecture
-- Integrationstests, Testabdeckung >70%
-- Monitoring & Error Tracking
-- Robustheit gegen Ausfälle
+## Month 5 – Architecture & Quality
+- Refactoring & layered architecture enforcement
+- Integration tests, test coverage >70%
+- Monitoring & error tracking
+- Ensure robustness against failures
 
-## Monat 6 – Portfolio & Bewerbungsoptimierung
-- README & Architekturdiagramme
-- Projektaufbereitung für Bewerbungen
-- Deploy-Links & Feature-Übersicht
-- Finaler Refactoring- und Feinschliff
+## Month 6 – Portfolio & Job Application Preparation
+- README & architecture diagrams
+- Prepare project for job applications
+- Deployment links & feature overview
+- Final refactoring and polishing

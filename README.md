@@ -1,86 +1,95 @@
 # Bugtracker API
 
-## Projektvision
+## Project Vision
 
-Die Bugtracker API ist ein produktionsnah entwickeltes Backend-System zur strukturierten Verwaltung von Projekten und Tickets.
-Ziel ist es, eine klar aufgebaute, erweiterbare und wartbare API bereitzustellen, die typische Anforderungen moderner Softwareteams abbildet.
+The Bugtracker API is a production-oriented backend system for structured project and ticket management.  
+The goal is to provide a clearly structured, extensible, and maintainable API that meets the typical needs of modern software teams.
 
-Im Fokus steht nicht nur die Funktionalität, sondern insbesondere eine saubere Architektur, klare Verantwortlichkeiten im Code sowie ein professioneller Entwicklungsprozess.
+The focus is not only on functionality, but especially on clean architecture, clear responsibilities in the code, and a professional development process.
 
+---
 
-## Problemstellung
+## Problem Statement
 
-Viele kleine und mittelgroße Teams verwalten Aufgaben und Fehlerberichte über Tabellen, E-Mails oder überladene Tools.
-Dies führt häufig zu:
+Many small and medium-sized teams manage tasks and bug reports using spreadsheets, emails, or overloaded tools.  
+This often leads to:
 
-- Fehlender Transparenz
-- Unklaren Zuständigkeiten
-- Ineffizienter Priorisierung
-- Eingeschränkter Nachvollziehbarkeit von Änderungen
+- Lack of transparency
+- Unclear responsibilities
+- Inefficient prioritization
+- Limited traceability of changes
 
-Dieses Projekt adressiert diese Probleme durch eine klar strukturierte, rollenbasierte Backend-API.
+This project addresses these problems through a clearly structured, role-based backend API.
 
+---
 
-## Zielsetzung
+## Objectives
 
-Die Anwendung soll:
+The application should:
 
-- Projekte und Tickets strukturiert verwalten
-- Benutzer- und Rollenmodelle abbilden
-- Rechte sauber kontrollieren
-- Erweiterbarkeit ermöglichen
-- Testbar und wartbar sein
-- Produktionsnahe Standards erfüllen
+- Manage projects and tickets in a structured way
+- Represent users and roles
+- Enforce permissions properly
+- Allow extensibility
+- Be testable and maintainable
+- Follow production-ready standards
 
-Der Schwerpunkt liegt auf Backend-Architektur, Sicherheit, Qualitätssicherung und sauberer Strukturierung.
+Focus is on backend architecture, security, quality assurance, and clear structuring.
 
+---
 
-## Technologischer Fokus
+## Technological Focus
 
 - FastAPI
 - PostgreSQL
-- JWT-Authentifizierung
-- Rollen- & Rechteverwaltung
+- JWT authentication
+- Roles & permissions management
 - Layered Architecture
-- Unit- und Integrationstests
+- Unit and integration tests
 - CI/CD
 - Docker
 
+---
 
 ## MVP (Minimum Viable Product)
 
-Der initiale Funktionsumfang umfasst:
+Initial feature set includes:
 
-- Benutzerregistrierung und Login
-- JWT-basierte Authentifizierung
-- Rollen- und Rechteverwaltung
-- Projekte erstellen und verwalten
-- Tickets erstellen, bearbeiten und priorisieren
-- Statusverwaltung (Open, In Progress, Done)
-- Basis-Filter und Pagination
+- User registration and login
+- JWT-based authentication
+- Roles and permissions management
+- Create and manage projects
+- Create, edit, and prioritize tickets
+- Status management (Open, In Progress, Done)
+- Basic filtering and pagination
 
+---
 
-## Geplante Erweiterungen (Post-MVP)
+## Planned Extensions (Post-MVP)
 
-- Kommentarsystem
-- Soft Delete
-- Performance-Optimierung
+- Comment system
+- Soft delete
+- Performance optimization
 - Caching
-- Monitoring & Logging
-- Erweiterte Filter- und Suchfunktionen
+- Monitoring & logging
+- Advanced filter and search capabilities
 
+---
 
-## Qualitätsanspruch
+## Quality Standards
 
-Das Projekt wird nach klar definierten Standards entwickelt:
+The project is developed according to clearly defined standards:
 
-- Trennung von Business-Logik und Infrastruktur
-- Dokumentierte Architekturentscheidungen
-- Testabdeckung als Qualitätsindikator
-- Reproduzierbarer Entwicklungsprozess
-- Containerisierte Bereitstellung
+- Separation of business logic and infrastructure
+- Documented architectural decisions
+- Test coverage as quality indicator
+- Reproducible development process
+- Containerized deployment
 
-## Projektstatus
+---
 
-Derzeit befindet sich das Projekt in der Planungsphase.
-Architektur, Scope und Qualitätsziele werden definiert, bevor die Implementierung beginnt.
+## Project Status
+
+The project is currently in the planning phase.
+Architecture, scope, and quality goals are being defined before implementation begins.
+

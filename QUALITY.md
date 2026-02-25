@@ -1,27 +1,27 @@
-# Bugtracker API – Qualitätsstandards
+# Bugtracker API – Quality Standards
 
-## 1. Codequalität
-- Linting & Formatter verpflichtend
-- Pre-Commit Hooks aktiv
-- Konventionelle Commits
+## 1. Code Quality
+- Enforce linting & formatter
+- Activate pre-commit hooks
+- Follow conventional commit guidelines
 
-## 2. Tests
-- Unit-Tests für Businesslogik
-- Integrationstests für Endpoints
-- Testabdeckung >70%
+## 2. Testing
+- Unit tests for business logic
+- Integration tests for endpoints
+- Test coverage >70%
 
 ## 3. Security
-- JWT & Token-Rotation
-- Rollen- & Rechteprüfung
-- Rate Limiting & Brute-Force Schutz
-- Input-Validation & CORS
+- JWT & token rotation
+- Roles & permissions checks
+- Rate limiting & brute-force protection
+- Input validation & CORS handling
 
-## 4. Deployment & Betrieb
-- Containerisierung (Docker)
-- CI/CD Pipeline (Build, Test)
-- Logging & Healthchecks
+## 4. Deployment & Operations
+- Containerization (Docker)
+- CI/CD pipeline for build and test
+- Logging & health checks
 
-## 5. Dokumentation
-- API-Dokumentation via OpenAPI
-- Architekturentscheidungen versioniert
-- Roadmap & Features aktuell halten
+## 5. Documentation
+- API documentation via OpenAPI
+- Versioned architectural decisions
+- Keep roadmap & feature list up to date

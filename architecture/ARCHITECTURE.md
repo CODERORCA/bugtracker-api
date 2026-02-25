@@ -1,110 +1,108 @@
-# Architekturübersicht
+# Architecture Overview
 
-## Architekturansatz
+## Architectural Approach
 
-Die Bugtracker API folgt einer Schichtenarchitektur (Layered Architecture) mit klarer Trennung von Verantwortlichkeiten.
-Ziel ist eine wartbare, testbare und erweiterbare Systemstruktur mit klar definierten Abhängigkeiten.
+The Bugtracker API follows a layered architecture (Layered Architecture) with a clear separation of responsibilities.
+The goal is a maintainable, testable, and extensible system structure with well-defined dependencies.
 
-Die Abhängigkeiten verlaufen strikt in eine Richtung:
+Dependencies strictly flow in one direction:
 
-API → Services → Repositories → Datenbank
+API → Services → Repositories → Database
 
-Keine untere Schicht darf von einer darüberliegenden abhängig sein.
-
----
-
-## Architekturebenen
-
-### 1. Präsentationsschicht (API)
-
-Verantwortlich für:
-- HTTP-Endpunkte
-- Request- und Response-Modelle
-- Eingabevalidierung
-- Statuscode-Verarbeitung
-
-Diese Schicht enthält keine Geschäftslogik.
+No lower layer should depend on a higher one.
 
 ---
 
-### 2. Applikations- / Service-Schicht
+## Architecture Layers
 
-Verantwortlich für:
-- Geschäftslogik
-- Orchestrierung der Repositories
-- Berechtigungsprüfungen
-- Transaktionssteuerung
+### 1. Presentation Layer (API)
 
-Hier befindet sich das zentrale Verhalten der Anwendung.
+Responsible for:
+- HTTP endpoints
+- Request and response models
+- Input validation
+- Status code handling
 
-Services dürfen keine HTTP-spezifischen Abhängigkeiten besitzen.
-
----
-
-### 3. Domänenschicht
-
-Verantwortlich für:
-- Kernentitäten
-- Domänenmodelle
-- Fachliche Regeln (falls relevant)
-
-Die Domänenschicht ist framework-unabhängig und bildet den fachlichen Kern des Systems.
+This layer contains no business logic.
 
 ---
 
-### 4. Infrastruktur-Schicht
+### 2. Application / Service Layer
 
-Verantwortlich für:
-- Datenbankzugriffe
-- ORM-Modelle
-- Repository-Implementierungen
-- Externe Integrationen
+Responsible for:
+- Business logic
+- Orchestration of repositories
+- Permission checks
+- Transaction management
 
-Diese Schicht kapselt technische Implementierungsdetails.
+This layer contains the core application behavior.
+Services must not have HTTP-specific dependencies.
 
 ---
 
-## Projektstruktur
+### 3. Domain Layer
 
-Die Projektstruktur ist wie folgt aufgebaut:
+Responsible for:
+- Core entities
+- Domain models
+- Business rules (if applicable)
 
+The domain layer is framework-independent and represents the core of the system.
+
+---
+
+### 4. Infrastructure Layer
+
+Responsible for:
+- Database access
+- ORM models
+- Repository implementations
+- External integrations
+
+This layer encapsulates technical implementation details.
+
+---
+
+## Project Structure
+
+The project is organized as follows:
 bugtracker/
 │
 ├── app/
-│   ├── main.py
-│   │
-│   ├── api/
-│   │   ├── v1/
-│   │   │   ├── routes/
-│   │   │   │   ├── users.py
-│   │   │   │   ├── projects.py
-│   │   │   │   ├── tickets.py
-│   │   │   │   └── auth.py
-│   │   │   └── router.py
-│   │
-│   ├── core/
-│   │   ├── config.py
-│   │   ├── security.py
-│   │   └── dependencies.py
-│   │
-│   ├── domain/
-│   │   ├── models/
-│   │   └── schemas/
-│   │
-│   ├── services/
-│   │   ├── user_service.py
-│   │   ├── project_service.py
-│   │   └── ticket_service.py
-│   │
-│   ├── repositories/
-│   │   ├── user_repository.py
-│   │   ├── project_repository.py
-│   │   └── ticket_repository.py
-│   │
-│   └── db/
-│       ├── base.py
-│       ├── session.py
-│       └── models.py
+│ ├── main.py
+│ │
+│ ├── api/
+│ │ ├── v1/
+│ │ │ ├── routes/
+│ │ │ │ ├── users.py
+│ │ │ │ ├── projects.py
+│ │ │ │ ├── tickets.py
+│ │ │ │ └── auth.py
+│ │ │ └── router.py
+│ │
+│ ├── core/
+│ │ ├── config.py
+│ │ ├── security.py
+│ │ └── dependencies.py
+│ │
+│ ├── domain/
+│ │ ├── models/
+│ │ └── schemas/
+│ │
+│ ├── services/
+│ │ ├── user_service.py
+│ │ ├── project_service.py
+│ │ └── ticket_service.py
+│ │
+│ ├── repositories/
+│ │ ├── user_repository.py
+│ │ ├── project_repository.py
+│ │ └── ticket_repository.py
+│ │
+│ └── db/
+│ ├── base.py
+│ ├── session.py
+│ └── models.py
 │
 ├── tests/
 │
@@ -117,34 +115,35 @@ bugtracker/
 
 ---
 
-## Abhängigkeitsregeln
+## Dependency Rules
 
-- Die API-Schicht darf Services verwenden.
-- Services dürfen Repositories verwenden.
-- Repositories dürfen auf Datenbankmodelle zugreifen.
-- Zirkuläre Abhängigkeiten sind nicht erlaubt.
-- Geschäftslogik darf nicht in Route-Handlern implementiert werden.
-- HTTP-spezifische Logik darf nicht in Services enthalten sein.
-
----
-
-## Gestaltungsprinzipien
-
-- Klare Trennung von Verantwortlichkeiten
-- Eindeutige Zuständigkeiten pro Schicht
-- Hohe Testbarkeit
-- Geringe Kopplung
-- Containerisierte Bereitstellung
-- Dokumentation von Architekturentscheidungen
+- The API layer may use services.
+- Services may use repositories.
+- Repositories may access database models.
+- Circular dependencies are not allowed.
+- Business logic must not be implemented in route handlers.
+- HTTP-specific logic must not be included in services.
 
 ---
 
-## Weiterentwicklungsstrategie
+## Design Principles
 
-Die Architektur ist so konzipiert, dass:
+- Clear separation of responsibilities
+- Well-defined layer ownership
+- High testability
+- Low coupling
+- Containerized deployment
+- Documentation of architectural decisions
 
-- Neue Funktionen ohne strukturelle Änderungen ergänzt werden können
-- Refactorings möglich sind, ohne externe Schnittstellen zu brechen
-- Skalierung und zukünftige Erweiterungen (z. B. Caching oder Monitoring) unterstützt werden
+---
 
-Strukturelle Stabilität hat Vorrang vor schneller Feature-Erweiterung.
+## Evolution Strategy
+
+The architecture is designed so that:
+
+- New features can be added without structural changes
+- Refactoring can occur without breaking external interfaces
+- Scaling and future extensions (e.g., caching or monitoring) are supported
+
+Structural stability takes priority over rapid feature expansion.
+

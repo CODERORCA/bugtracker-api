@@ -1,73 +1,75 @@
-## Scope Definition
+# Scope Definition
 
-Dieses Projekt verfolgt einen klar abgegrenzten Funktionsumfang. Ziel ist es, eine stabile, wartbare und erweiterbare Backend-API mit produktionsnaher Struktur zu entwickeln. Der Scope ist bewusst begrenzt, um Qualität, Architektur und Wartbarkeit in den Mittelpunkt zu stellen.
+This project has a clearly defined scope. The goal is to develop a stable, maintainable, and extensible backend API with a production-oriented structure.  
+The scope is deliberately limited to prioritize quality, architecture, and maintainability.
 
 ---
 
-### In Scope (MVP – Minimum Viable Product)
+## In Scope (MVP – Minimum Viable Product)
 
-Der initiale Funktionsumfang umfasst:
+The initial feature set includes:
 
-#### 1. Benutzer- & Authentifizierungssystem
-- Benutzerregistrierung
-- Login mit JWT-basierter Authentifizierung
-- Passwort-Hashing
-- Rollenmodell (z. B. Admin, Member)
-- Rollenbasierte Zugriffskontrolle
+### 1. User & Authentication System
+- User registration
+- JWT-based login authentication
+- Password hashing
+- Role model (e.g., Admin, Member)
+- Role-based access control
 
-#### 2. Projektverwaltung
-- Projekte erstellen, bearbeiten und löschen
-- Benutzer Projekten zuweisen
-- Projektbezogene Ticketverwaltung
+### 2. Project Management
+- Create, edit, and delete projects
+- Assign users to projects
+- Project-related ticket management
 
-#### 3. Ticketverwaltung
-- Tickets erstellen, bearbeiten und löschen
-- Statusverwaltung (Open, In Progress, Done)
-- Priorisierung
-- Zuordnung zu Benutzern
-- Basis-Filter und Pagination
+### 3. Ticket Management
+- Create, edit, and delete tickets
+- Status management (Open, In Progress, Done)
+- Prioritization
+- Assign tickets to users
+- Basic filtering and pagination
 
-#### 4. Technische Anforderungen
+### 4. Technical Requirements
 - Layered Architecture
-- Trennung von Business-Logik und Infrastruktur
-- PostgreSQL als Datenbank
-- Containerisierung mit Docker
-- Unit-Tests für Kernlogik
-- CI/CD-Grundstruktur
+- Separation of business logic and infrastructure
+- PostgreSQL database
+- Docker containerization
+- Unit tests for core logic
+- Basic CI/CD pipeline
 
 ---
 
-### Out of Scope (bewusst ausgeschlossen)
+## Out of Scope (Explicitly Excluded)
 
-Folgende Features sind explizit nicht Bestandteil des MVP:
+The following features are **not part of the MVP**:
 
-- Frontend-Anwendung
-- Echtzeit-Funktionalität (z. B. WebSockets)
-- Microservice-Architektur
-- Multi-Tenant-Architektur
-- OAuth-Integration (Google, GitHub etc.)
-- Komplexes Benachrichtigungssystem
-- Mobile-App
-- Mandantenfähigkeit
-- Enterprise-Features wie Audit-Logging auf Enterprise-Niveau
+- Frontend application
+- Real-time functionality (e.g., WebSockets)
+- Microservice architecture
+- Multi-tenant architecture
+- OAuth integration (Google, GitHub, etc.)
+- Complex notification system
+- Mobile app
+- Tenant capability
+- Enterprise features (e.g., enterprise-level audit logging)
 
-Diese Abgrenzung dient der Fokussierung auf Architekturqualität und Kernfunktionalität.
-
----
-
-### Nicht-funktionale Anforderungen
-
-Das Projekt verfolgt folgende Qualitätsziele:
-
-- Testbare Business-Logik
-- Dokumentierte Architekturentscheidungen
-- Saubere Code-Struktur und klare Verantwortlichkeiten
-- Erweiterbarkeit ohne strukturelle Umbrüche
-- Reproduzierbare Entwicklungsumgebung
-- Deployment-fähige Containerstruktur
+This ensures focus on architecture quality and core functionality.
 
 ---
 
-### Scope-Prinzip
+## Non-Functional Requirements
 
-Neue Features werden erst nach vollständiger Stabilisierung des MVP bewertet und priorisiert. Architektur und Wartbarkeit haben Vorrang vor Feature-Expansion.
+The project targets the following quality goals:
+
+- Testable business logic
+- Documented architectural decisions
+- Clean code structure and clear responsibilities
+- Extensibility without structural overhaul
+- Reproducible development environment
+- Deployment-ready container setup
+
+---
+
+## Scope Principle
+
+New features will be evaluated and prioritized **only after full stabilization of the MVP**.
+Architecture and maintainability take precedence over feature expansion.

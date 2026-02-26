@@ -35,6 +35,4 @@ Each workflow connects API handling, domain logic, persistence, security enforce
 [MIT License](https://github.com/CODERORCA/bugtracker-api/blob/main/LICENSE)
 
 ## Disclaimer
-The project is currently in the planning phase.
-Architecture, scope, and quality goals are being defined before implementation begins.
-This project is being conducted with the help of A.I. to reduce time for researching information and to speed up my own learning process and to learn prompting A.I. to do tasks the way they are intended to do.
+This project is currently in the planning phase. Architecture, scope, and quality goals are being defined before implementation begins. The project is developed with the assistance of AI to streamline research, accelerate my learning process, and improve my ability to craft prompts that guide AI to perform tasks as intended.

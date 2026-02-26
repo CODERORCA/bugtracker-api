@@ -21,13 +21,13 @@ Focus is on backend architecture, security, quality assurance, and clear structu
 ## Technological Focus
 These technologies are not isolated backend tools — they enable complete backend engineering workflows that span API design, security, data persistence, testing, and deployment.
 
-- Request to Response (FastAPI): Handle validated client input, enforce strict schema validation, and generate structured API responses with automatic documentation — delivering a high-performance, type-safe interface layer ready for integration.
-- Data to Durable State (PostgreSQL): Persist relational domain entities with transactional integrity, enforce constraints, and optimize query performance — ensuring consistent, reliable, and production-grade data storage.
-- Identity to Secure Access (JWT Authentication): Authenticate users, issue signed access tokens, and validate protected endpoints without server-side session storage — enabling scalable and stateless security enforcement.
-- Role to Controlled Action (Roles & Permissions Management): Map user roles to explicit permissions and restrict critical operations at the endpoint level — enforcing clear responsibility boundaries and preventing unauthorized access.
-- Endpoint to Business Logic Isolation (Layered Architecture): Route incoming requests through structured layers, isolate domain logic from infrastructure concerns, and minimize coupling — increasing maintainability, clarity, and long-term extensibility.
-- Logic to Verified Behavior (Unit & Integration Tests): Validate core business rules in isolation, execute end-to-end request flow tests, and detect regressions early — ensuring stability and safe refactoring as the system evolves.
-- Commit to Deployment Gate (CI/CD): Automatically build, lint, and test every code change before integration — maintaining consistent quality standards and reducing manual verification overhead.
+- **Request to Response (FastAPI):** Handle validated client input, enforce strict schema validation, and generate structured API responses with automatic documentation — delivering a high-performance, type-safe interface layer ready for integration.
+- **Data to Durable State (PostgreSQL):** Persist relational domain entities with transactional integrity, enforce constraints, and optimize query performance — ensuring consistent, reliable, and production-grade data storage.
+- **Identity to Secure Access (JWT Authentication):** Authenticate users, issue signed access tokens, and validate protected endpoints without server-side session storage — enabling scalable and stateless security enforcement.
+- **Role to Controlled Action (Roles & Permissions Management):** Map user roles to explicit permissions and restrict critical operations at the endpoint level — enforcing clear responsibility boundaries and preventing unauthorized access.
+- **Endpoint to Business Logic Isolation (Layered Architecture):** Route incoming requests through structured layers, isolate domain logic from infrastructure concerns, and minimize coupling — increasing maintainability, clarity, and long-term extensibility.
+- **Logic to Verified Behavior (Unit & Integration Tests):** Validate core business rules in isolation, execute end-to-end request flow tests, and detect regressions early — ensuring stability and safe refactoring as the system evolves.
+- **Commit to Deployment Gate (CI/CD):** Automatically build, lint, and test every code change before integration — maintaining consistent quality standards and reducing manual verification overhead.
 
 Each workflow connects API handling, domain logic, persistence, security enforcement, and operational infrastructure into a cohesive backend system — enabling a seamless transition from development to deployment without structural redesign or operational friction.
 

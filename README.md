@@ -1,17 +1,13 @@
 # Bugtracker API
 
-## Project Vision
-
-The Bugtracker API is a production-oriented backend system for structured project and ticket management.  
+The Bugtracker API is a production-oriented backend system for structured project and ticket management.
 The goal is to provide a clearly structured, extensible, and maintainable API that meets the typical needs of modern software teams.
 
 The focus is not only on functionality, but especially on clean architecture, clear responsibilities in the code, and a professional development process.
 
----
+## Why Bugtracker API
 
-## Problem Statement
-
-Many small and medium-sized teams manage tasks and bug reports using spreadsheets, emails, or overloaded tools.  
+Many small and medium-sized teams manage tasks and bug reports using spreadsheets, emails, or overloaded tools.
 This often leads to:
 
 - Lack of transparency
@@ -21,9 +17,8 @@ This often leads to:
 
 This project addresses these problems through a clearly structured, role-based backend API.
 
----
 
-## Objectives
+## What is Bugtracker API for?
 
 The application should:
 
@@ -36,7 +31,6 @@ The application should:
 
 Focus is on backend architecture, security, quality assurance, and clear structuring.
 
----
 
 ## Technological Focus
 
@@ -49,7 +43,6 @@ Focus is on backend architecture, security, quality assurance, and clear structu
 - CI/CD
 - Docker
 
----
 
 ## MVP (Minimum Viable Product)
 
@@ -63,7 +56,6 @@ Initial feature set includes:
 - Status management (Open, In Progress, Done)
 - Basic filtering and pagination
 
----
 
 ## Planned Extensions (Post-MVP)
 
@@ -74,7 +66,6 @@ Initial feature set includes:
 - Monitoring & logging
 - Advanced filter and search capabilities
 
----
 
 ## Quality Standards
 
@@ -86,10 +77,12 @@ The project is developed according to clearly defined standards:
 - Reproducible development process
 - Containerized deployment
 
----
 
 ## Project Status
 
 The project is currently in the planning phase.
 Architecture, scope, and quality goals are being defined before implementation begins.
+
+## License
+[MIT License](https://github.com/CODERORCA/bugtracker-api/blob/main/LICENSE)
 

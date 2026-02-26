@@ -1,4 +1,11 @@
 # Bugtracker API – Quality Standards
+The project is developed according to clearly defined standards:
+
+- Separation of business logic and infrastructure
+- Documented architectural decisions
+- Test coverage as quality indicator
+- Reproducible development process
+- Containerized deployment
 
 ## 1. Code Quality
 - Enforce linting & formatter

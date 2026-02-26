@@ -1,6 +1,6 @@
 # Scope Definition
 
-This project has a clearly defined scope. The goal is to develop a stable, maintainable, and extensible backend API with a production-oriented structure.  
+This project has a clearly defined scope. The goal is to develop a stable, maintainable, and extensible backend API with a production-oriented structure.
 The scope is deliberately limited to prioritize quality, architecture, and maintainability.
 
 ---
@@ -73,3 +73,11 @@ The project targets the following quality goals:
 
 New features will be evaluated and prioritized **only after full stabilization of the MVP**.
 Architecture and maintainability take precedence over feature expansion.
+
+## Planned Extensions (Post-MVP)
+- Comment system
+- Soft delete
+- Performance optimization
+- Caching
+- Monitoring & logging
+- Advanced filter and search capabilities

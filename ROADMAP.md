@@ -1,5 +1,4 @@
 # Bugtracker API – Roadmap
-
 ## Month 1 – Professional Development Foundation
 - API design & domain model
 - Project structure & Clean Code

@@ -1,12 +1,8 @@
-# Scope Definition
-
+# Scope
 This project has a clearly defined scope. The goal is to develop a stable, maintainable, and extensible backend API with a production-oriented structure.
 The scope is deliberately limited to prioritize quality, architecture, and maintainability.
 
----
-
 ## In Scope (MVP – Minimum Viable Product)
-
 The initial feature set includes:
 
 ### 1. User & Authentication System
@@ -36,10 +32,7 @@ The initial feature set includes:
 - Unit tests for core logic
 - Basic CI/CD pipeline
 
----
-
 ## Out of Scope (Explicitly Excluded)
-
 The following features are **not part of the MVP**:
 
 - Frontend application
@@ -54,10 +47,7 @@ The following features are **not part of the MVP**:
 
 This ensures focus on architecture quality and core functionality.
 
----
-
 ## Non-Functional Requirements
-
 The project targets the following quality goals:
 
 - Testable business logic
@@ -67,10 +57,7 @@ The project targets the following quality goals:
 - Reproducible development environment
 - Deployment-ready container setup
 
----
-
-## Scope Principle
-
+## Scope Principles
 New features will be evaluated and prioritized **only after full stabilization of the MVP**.
 Architecture and maintainability take precedence over feature expansion.
 

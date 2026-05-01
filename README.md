@@ -1,13 +1,20 @@
+# Important update!
+During the planning phase I have come to notice I am lacking crucial knowledge which would have normally given me no trouble to create a Roadmap and Diagrams without the use of A.I. which is unacceptable for me. Therefor, in order to be able to continue my project, I have decided the wisest approach would be to actually dive deep (and I mean deep) and study the programming language Python (since a lot of the programming is planned to be done in that particular programming language). I have the need to understand how data is processed and to ingrain the common buzzwords a programmer may hear or read as an instruction. This is to make up for the knowledge I did not get passed on while in training. It also serves to gain invaluable experience and be more efficient in modern software development without the use of external help.
+
+Until I have learned and be able to develop software on my own power, I will not touch A.I.
+
+You can follow my progress on python here: https://github.com/CODERORCA/python
+
 # Bugtracker API
 The Bugtracker API is currently under development as a production-ready backend to manage projects and tickets with clarity, security, and scalability. The plan is to implement it using a layered architecture, role-based access, automated tests, and containerized deployment, following industry-standard engineering practices. Each step — from API design and database modeling to CI/CD and Docker-based deployment — ensures the system will be maintainable, reproducible, and easy to integrate for any team or organization.
 
-## Why Bugtracker API
+## Real-world Problem
 In many organizations, issue tracking grows unstructured over time — starting with spreadsheets or simple boards and gradually becoming fragmented as teams, responsibilities, and projects scale. This often results in unclear ownership, inconsistent prioritization, limited traceability, and scattered communication. A Bugtracker API addresses these structural weaknesses by centralizing issue management within a clearly defined domain model. It enforces authentication, role-based access control, consistent status workflows, and reliable data persistence, transforming informal coordination into a controlled and auditable system.
 
-The goal of this project is to provide a production-oriented backend foundation for structured issue management. It is designed for development teams and growing organizations that require clarity, security, and scalability without the overhead of enterprise-grade platforms. By combining clean architecture, automated testing, containerization, and CI/CD practices, the system reflects real-world backend engineering standards and enables teams to manage issues in a secure, maintainable, and extensible environment.
+## Solution
+The goal of this project is to provide a production-oriented backend foundation for structured issue management. It is designed for development teams and growing organizations that require clarity, security, and scalability without the overhead of enterprise-grade platforms. By combining clean architecture, automated testing, containerization, and CI/CD practices, the system reflects real-world backend engineering standards and enables teams to manage issues in a secure, maintainable, and extensible environment. Bugtracker API is a software solution specialized in solving and tracking bugs gracefully for virtually any imaginable purpose.
 
-## What is Bugtracker API for?
-Bugtracker API is a software solution specialized in solving and tracking bugs gracefully for virtually any imaginable purpose. Its main functions are:
+Main functions:
 
 - Manage projects and tickets in a structured way
 - Represent users and roles
@@ -18,7 +25,7 @@ Bugtracker API is a software solution specialized in solving and tracking bugs g
 
 Focus is on backend architecture, security, quality assurance, and clear structuring. This project addresses these problems through a clearly structured, role-based backend API. The ultimate goal is to provide any company, corporation or teams in need of an efficient bugtracking software, making it scalable, easy to maintane as well functional for anyone.
 
-## Technological Focus
+## Technological Scope
 These technologies are not isolated backend tools — they enable complete backend engineering workflows that span API design, security, data persistence, testing, and deployment.
 
 - **Request to Response (FastAPI):** Handle validated client input, enforce strict schema validation, and generate structured API responses with automatic documentation — delivering a high-performance, type-safe interface layer ready for integration.

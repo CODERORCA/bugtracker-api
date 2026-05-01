@@ -1,23 +1,15 @@
-# Architecture Overview
-
-## Architectural Approach
-
-The Bugtracker API follows a layered architecture (Layered Architecture) with a clear separation of responsibilities.
+# Architecture
+The Bugtracker API follows a layered architecture with a clear separation of responsibilities.
 The goal is a maintainable, testable, and extensible system structure with well-defined dependencies.
 
 Dependencies strictly flow in one direction:
 
-API → Services → Repositories → Database
+API → Services → Domain → Repositories → Database
 
 No lower layer should depend on a higher one.
 
----
-
-## Architecture Layers
-
-### 1. Presentation Layer (API)
-
-Responsible for:
+## Layers
+### 1. Presentation (API)
 - HTTP endpoints
 - Request and response models
 - Input validation
@@ -25,11 +17,7 @@ Responsible for:
 
 This layer contains no business logic.
 
----
-
-### 2. Application / Service Layer
-
-Responsible for:
+### 2. Application / Service
 - Business logic
 - Orchestration of repositories
 - Permission checks
@@ -38,22 +26,14 @@ Responsible for:
 This layer contains the core application behavior.
 Services must not have HTTP-specific dependencies.
 
----
-
-### 3. Domain Layer
-
-Responsible for:
+### 3. Domain
 - Core entities
 - Domain models
 - Business rules (if applicable)
 
 The domain layer is framework-independent and represents the core of the system.
 
----
-
-### 4. Infrastructure Layer
-
-Responsible for:
+### 4. Infrastructure 
 - Database access
 - ORM models
 - Repository implementations
@@ -61,10 +41,7 @@ Responsible for:
 
 This layer encapsulates technical implementation details.
 
----
-
 ## Project Structure
-
 The project is organized as follows:
 bugtracker/
 │
@@ -113,10 +90,7 @@ bugtracker/
 ├── requirements.txt
 └── README.md
 
----
-
 ## Dependency Rules
-
 - The API layer may use services.
 - Services may use repositories.
 - Repositories may access database models.
@@ -124,10 +98,7 @@ bugtracker/
 - Business logic must not be implemented in route handlers.
 - HTTP-specific logic must not be included in services.
 
----
-
 ## Design Principles
-
 - Clear separation of responsibilities
 - Well-defined layer ownership
 - High testability
@@ -135,11 +106,8 @@ bugtracker/
 - Containerized deployment
 - Documentation of architectural decisions
 
----
-
 ## Evolution Strategy
-
-The architecture is designed so that:
+The architecture is designed with the following in mind:
 
 - New features can be added without structural changes
 - Refactoring can occur without breaking external interfaces

@@ -1,4 +1,4 @@
-# Bugtracker API – Quality Standards
+# Quality Standards
 The project is developed according to clearly defined standards:
 
 - Separation of business logic and infrastructure

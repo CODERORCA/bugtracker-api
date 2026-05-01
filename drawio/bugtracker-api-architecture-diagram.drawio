@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="4U2pF0yC0HXFFzjri6tj">
+    <mxGraphModel dx="1426" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Presentation (API)&lt;/font&gt;&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+          <mxGeometry x="280" y="120" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;- Endpoints&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Request/Response Models&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Validation&lt;/font&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="BLGcAkCjq0wKj4BIoWto-1" vertex="1">
+          <mxGeometry y="50" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Application-/Service&lt;/font&gt;&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+          <mxGeometry x="280" y="280" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;- Businesslogik&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Authorizationcheck&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Orchestration&lt;/font&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="BLGcAkCjq0wKj4BIoWto-3" vertex="1">
+          <mxGeometry y="50" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Repository&lt;/font&gt;&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" parent="1" vertex="1">
+          <mxGeometry x="280" y="440" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;- Data Access&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Query-Logic&lt;/font&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="BLGcAkCjq0wKj4BIoWto-5" vertex="1">
+          <mxGeometry y="50" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Infrastructur/DB&lt;/font&gt;&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+          <mxGeometry x="280" y="600" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-8" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;- ORM-Model&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- PostgreSQL&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- Migration&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="BLGcAkCjq0wKj4BIoWto-7" vertex="1">
+          <mxGeometry y="50" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BLGcAkCjq0wKj4BIoWto-2" target="BLGcAkCjq0wKj4BIoWto-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BLGcAkCjq0wKj4BIoWto-4" target="BLGcAkCjq0wKj4BIoWto-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BLGcAkCjq0wKj4BIoWto-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BLGcAkCjq0wKj4BIoWto-6" target="BLGcAkCjq0wKj4BIoWto-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qnH4OQnlRxKKSpoRr7Qd-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Dependencies&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Dependencies run through a strict order from top to bottom.&lt;/div&gt;&lt;div&gt;Lower Layers must not know anything about the top layers.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Examples:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Services do not know HTTP-Objects&lt;/div&gt;&lt;div&gt;- Repositories do not contain businesslogic&lt;/div&gt;&lt;div&gt;- API does not include persistency logic&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This structure ensure business logic can be tested independantly, infrastructure can be upgraded, refactoring to be safely commited and long-term scalability and maintaneability&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="129" y="760" width="570" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
